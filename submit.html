@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Homework</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📤 Submit Your Homework</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="submit.html">Submit Homework</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Just fill the form and I’ll handle the rest</h2>
+    <p>Send your question or upload your document below.</p>
+
+    <form action="https://formsubmit.co/simisodlamini79@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_next" value="https://hopeforged.github.io/aihomework-site/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">Your Name</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label for="email">Your Email (to receive answers)</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label for="message">Your Homework Question</label><br>
+      <textarea name="message" rows="5" required></textarea><br><br>
+
+      <label for="file">Upload a File (optional)</label><br>
+      <input type="file" name="attachment"><br><br>
+
+      <button type="submit" class="cta">Send Homework</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 AI Homework Helper. Powered by Hopeforged.</p>
+  </footer>
+</body>
+</html>
